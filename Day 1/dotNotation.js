@@ -62,9 +62,12 @@ for (let i = 0; i < grid.length; i++) {
 
 const column = "   |   |   ";
 const row = "-----------";
+const limit = 1
 
-for (let c = 0, r = 0; c < 3, r < 2; c++, r++) {
+for (let grid2 = 0; grid2 <= limit; grid2++) {
     console.log (column);
     console.log (row);
+if (grid2 == limit)
+    {console.log (column)}
 }
 

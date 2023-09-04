@@ -1,0 +1,19 @@
+cd - change directory
+mkdir - make new directory
+ls - lists files in the directory
+touch - creates a new files
+rm - removes a file (deletes)
+cd .. - goes up one directory(folder)
+
+Naming Conventions
+camel case = naming convention for javascript
+capitilise the start of every new word. everything else should be lowercase
+withdrawalAmount      firstName       lastName
+
+snake case = naming convention for python
+instead of spaces use underscores
+withdrawal_amount     first_name      last_name
+
+kebab case = naming convention for CSS
+replace spaces with - (hyphens)
+withdrawal-amount     first-name      last-name
