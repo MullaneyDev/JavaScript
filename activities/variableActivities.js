@@ -1,5 +1,6 @@
 //Activity 1 - stretch
 console.log("Activity 1")
+
 let firstName = "Matt";
 let age = 33;
 let favDrink = "Tea";
@@ -18,10 +19,13 @@ favColour = "red";
 console.log(
   `My name is ${firstName}. I am ${age} and my favourite drink is ${favDrink}. My favourite colour is ${favColour}.`
 );
-console.log(" ")
+
+console.log()
+
 
 //Activity 2 - stretch
 console.log("Activity 2");
+
 let breakfast = "Choclate Weetabix";
 let lunch = "Sausage roll";
 let dinner = "Spaghetti Bolognase";
@@ -37,10 +41,14 @@ dinner = "Cottage pie";
 console.log(
   `Tomorrow I will be having ${breakfast} for breakfast. For my lunch I will be having ${lunch} and for my dinner I will be having ${dinner}.`
 );
-console.log(" ")
+
+console.log()
+
+
 
 //Activity 3
 console.log("Activity 3");
+
 let DoB = new Date("2/10/1990 01:10:00");
 let todaysDate = new Date();
 
@@ -74,10 +82,13 @@ const weeks = (todaysDate, DoB) => {
   return totalWeeks;
 };
 console.log(weeks(todaysDate, DoB) + " weeks since birth");
-console.log (" ")
+console.log()
+
+
 
 //Activity 4
 console.log("Activity 4");
+
 let space1 = "x";
 let space2 = "o";
 let space3 = " ";

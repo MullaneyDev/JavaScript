@@ -68,6 +68,6 @@ for (let grid2 = 0; grid2 <= limit; grid2++) {
     console.log (column);
     console.log (row);
 if (grid2 == limit)
-    {console.log (column)}
-}
+    {console.log (column)};
+};
 
