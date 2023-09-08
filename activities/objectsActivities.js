@@ -77,52 +77,56 @@ console.log()
 console.log("Activity 3.2");
 
 const coffeeShop2 = {
+  receiptHead:
+    "***************************\n*                         *\n*         Receipt         *\n*                         *\n***************************\n",
   branch: "Oxton",
   menu: {
-    "Americano": {
+    Americano: {
       price: 2.5,
-      list_display: "Americano @ £2.50",
+      listDisplay: "Americano             £2.50\n",
     },
-    "Cappucino": {
-        price: 3,
-        list_display: "Cappucino @ £3.00",
+    Cappucino: {
+      price: 3,
+      listDisplay: "Cappucino             £3.00\n",
     },
-    "Latte": {
-        price: 3,
-        list_display: "Latte @ £3.00",
+    Latte: {
+      price: 3,
+      listDisplay: "Latte                 £3.00\n",
     },
     "Flat white": {
-        price: 2.75,
-        list_display: "Flat white @ £2.75",
+      price: 2.75,
+      listDisplay: "Flat white            £2.75\n",
     },
-    "Mocha": {
-        price: 3.25,
-        list_display: "Mocha @ 3.25",
+    Mocha: {
+      price: 3.25,
+      listDisplay: "Mocha                 £3.25\n",
     },
     "Toast with jam": {
-        price: 1.5,
-        list_display: "Toast with jam @ £1.50",
+      price: 1.5,
+      listDisplay: "Toast with jam        £1.50\n",
     },
-    "Croissant": {
-        price: 2,
-        list_display: "Croissant @ £2.00",
+    Croissant: {
+      price: 2,
+      listDisplay: "Croissant             £2.00\n",
     },
     "Pancakes with syrup": {
-        price: 3.5,
-        list_display: "Pancakes with syrup @ £3.50"
-    }
+      price: 3.5,
+      listDisplay: "Pancakes with syrup   £3.50\n",
+    },
   },
 
   order(order) {
     let total = 0;
-    let order_string = "";
+    let orderString = "";
     order.forEach((order) => {
       let price = this.menu[order].price;
       total += price;
-      order_string += this.menu[order].list_display + ", ";
+      orderString += this.menu[order].listDisplay;
     });
-    return `Welcome to our ${this.branch} branch. Your order is ${order_string}and your total cost is £${total}`;
+    return `${this.receiptHead}\nWelcome to CostBucks ${
+      this.branch
+    }.\n\nYour order is :\n${orderString}\nTotal cost =         £${total.toFixed(2)}\n\n   Please visit us again!`;
   },
 };
 
-console.log(coffeeShop2.order(["Americano", "Americano", "Toast with jam", "Pancakes with syrup"]));
+console.log(coffeeShop2.order(["Americano", "Cappucino", "Latte", "Flat white", "Mocha", "Toast with jam", "Croissant", "Pancakes with syrup"]));
