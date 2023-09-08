@@ -81,15 +81,15 @@ const coffeeShop2 = {
     "***************************\n*                         *\n*         Receipt         *\n*                         *\n***************************\n",
   branch: "Oxton",
   menu: {
-    Americano: {
+    "Americano": {
       price: 2.5,
       listDisplay: "Americano             £2.50\n",
     },
-    Cappucino: {
+    "Cappucino": {
       price: 3,
       listDisplay: "Cappucino             £3.00\n",
     },
-    Latte: {
+    "Latte": {
       price: 3,
       listDisplay: "Latte                 £3.00\n",
     },
@@ -97,7 +97,7 @@ const coffeeShop2 = {
       price: 2.75,
       listDisplay: "Flat white            £2.75\n",
     },
-    Mocha: {
+    "Mocha": {
       price: 3.25,
       listDisplay: "Mocha                 £3.25\n",
     },
@@ -105,7 +105,7 @@ const coffeeShop2 = {
       price: 1.5,
       listDisplay: "Toast with jam        £1.50\n",
     },
-    Croissant: {
+    "Croissant": {
       price: 2,
       listDisplay: "Croissant             £2.00\n",
     },
